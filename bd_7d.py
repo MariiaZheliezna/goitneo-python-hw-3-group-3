@@ -56,10 +56,10 @@ def get_birthdays_per_week(users):
         if workdays[week_day_name]:
             birthday_selebrate_str = ", ".join(workdays[week_day_name])
             if result:
-                result = result + (f"{week_day_name:<10} : {birthday_selebrate_str}")
+                result = result + "\n" + (f"{week_day_name:<10} : {birthday_selebrate_str}")
             else:
                 result = (f"{week_day_name:<10} : {birthday_selebrate_str}")
-    result = result if result != "" else "No birthdays this week"
+    result = result if result != "" else "There ara no birthdays in the next week"
     return result
 
 
