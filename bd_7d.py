@@ -51,10 +51,15 @@ def get_birthdays_per_week(users):
     #print(weekdays_order_dict)
 
     # вивід результату
+    result = ""
     for week_day_index, week_day_name in weekdays_order_dict.items():
         if workdays[week_day_name]:
             birthday_selebrate_str = ", ".join(workdays[week_day_name])
-            print(f"{week_day_name:<10} : {birthday_selebrate_str}")
-            
+            if result:
+                result = result + (f"{week_day_name:<10} : {birthday_selebrate_str}")
+            else:
+                result = (f"{week_day_name:<10} : {birthday_selebrate_str}")
+    result = result if result != "" else "No birthdays this week"
+    return result
 
 
