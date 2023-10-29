@@ -1,18 +1,7 @@
-# Домашнє завдання 1, завдання 1
+
 from datetime import datetime, timedelta
 from collections import defaultdict
 
-users = [
-    {"name": "Bill Gates1", "birthday": datetime(1955, 10, 20)},
-    {"name": "Bill Gates2", "birthday": datetime(1955, 10, 14)},
-    {"name": "Bill Gates3", "birthday": datetime(1975, 10, 15)},
-    {"name": "Bill Gates4", "birthday": datetime(1985, 10, 17)},
-    {"name": "Bill Gates5", "birthday": datetime(1955, 9, 1)},
-    {"name": "Bill Gates6", "birthday": datetime(1995, 11, 2)},
-    {"name": "Bill Gates7", "birthday": datetime(2000, 10, 21)},
-    {"name": "Bill Gates8", "birthday": datetime(2001, 12, 18)},
-    {"name": "Bill Gates9", "birthday": datetime(2002, 10, 22)},
-]
 
 # виводить у консоль список користувачів, яких потрібно привітати по днях на наступному тижні
 def get_birthdays_per_week(users):
